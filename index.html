@@ -66,6 +66,20 @@
     #container {
         text-align: center;
     }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(15, 32, 39, 0.6);
+        text-align: center;
+        padding: 10px 0;
+        font-weight: normal;
+        font-size: 14px;
+        color: white;
+        z-index: 10;
+    }
 </style>
 </head>
 
@@ -86,6 +100,8 @@
     <button onclick="rollDice()">Roll Dice</button>
     <button onclick="resetDice()">Reset</button>
 </div>
+
+<footer>&copy; Aaron Juneja</footer>
 
 <script>
 let remaining = [1, 2, 3, 4, 5, 6];
@@ -116,7 +132,7 @@ function rollDice() {
     }
 
     cube.style.transform =
-        rotateX(${xRand + x}deg) rotateY(${yRand + y}deg);
+        `rotateX(${xRand + x}deg) rotateY(${yRand + y}deg)`;
 }
 
 function resetDice() {
@@ -126,3 +142,4 @@ function resetDice() {
 
 </body>
 </html>
+
