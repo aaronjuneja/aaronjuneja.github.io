@@ -107,7 +107,7 @@ function rollDice() {
         case 3: x = 0;    y = -90;  break;
         case 4: x = 0;    y = 90;   break;
         case 5: x = 0;    y = 180;  break;
-        case 6: x = -90;  y = 0;    break; // Blank bottom face
+        case 6: x = -90;  y = 0;    break; 
     }
 
     cube.style.transform = `rotateX(${xRand + x}deg) rotateY(${yRand + y}deg)`;
@@ -120,4 +120,5 @@ function resetDice() {
 
 </body>
 </html>
+
 
