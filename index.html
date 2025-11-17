@@ -72,11 +72,11 @@
     <div class="scene">
         <div id="cube" class="cube">
             <div class="face front">1</div>
-            <div class="face bottom"></div> <!-- Blank Face -->
             <div class="face back">5</div>
             <div class="face right">3</div>
             <div class="face left">4</div>
             <div class="face top">2</div>
+            <div class="face bottom"></div> <!-- Blank Face -->
         </div>
     </div>
 
@@ -107,7 +107,7 @@ function rollDice() {
         case 3: x = 0;    y = -90;  break;
         case 4: x = 0;    y = 90;   break;
         case 5: x = 0;    y = 180;  break;
-        case 6: x = -90;  y = 0;    break; 
+        case 6: x = -90;  y = 0;    break; // Blank bottom face
     }
 
     cube.style.transform = `rotateX(${xRand + x}deg) rotateY(${yRand + y}deg)`;
@@ -120,8 +120,3 @@ function resetDice() {
 
 </body>
 </html>
-
-
-
-
-
